@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Flexbox</h1>
+        <p>Um pequeno resumo sobre <i>Flexible Box Layout module</i>. Para fixação de conteúdo aprendido durante a realização do curso de HTML5 e CSS3 do <a href="https://www.cursoemvideo.com/">Curso em Vídeo</a></p>
+    </header>
+    <main>
+        <section>
+            <h2>O que são <i>Flexbox</i></h2>
+            <p><i>Flexible Box Layout module</i> ou resumindo <i>Flexbox</i>, foram projetadas como um modelo de <i>layout</i> unidimensional. Isso quer dizer que os elementos são configurados em uma dimensão por vez, sendo em linhas ou em colunas. Foram criadas para para organizar os elementos dentro de uma interface.</p>
+            <p>Abaixo veremos os princípios básicos e exemplos práticos, mas antes é preciso entender os eixos no flexbox.</p>
+            <h2>Definindo um item com flexbox</h2>
+            <p>Antes de tudo é preciso entender como "ativar" o flexbox e qual vai ser o comportamento dos elementos. Os itens que serão dinamicamente configurados precisam de um pai. Mas quem é esse pai? A resposta é: depende!</p>
+            <p>Para simplificar as coisas vamos imaginar que temos uma div e dentro dessa div temos elementos p. O pai é a div e os elementos p são seus filhos. Dito isso agora podemos entender o começo da configuração com flexbox</p>
+            <p>Para começar é necessário atribuir um display flex ao pai:</p>
+            <pre><code>
+            &lt;style&gt;
+                div#container {
+                    display: flex;
+                }
+            &lt;/style&gt;
+            </code></pre>
+            <p>Entendido isso podemos começar a entender os eixos no flexbox.</p>
+            <h2>Os eixos no flexbox</h2>
+            <p>O flexbox possui dois eixos em que podemos configurar os elementos: eixo principal (main axis) e eixo transversal (cross axis).</p>
+            <p>O main axis é quem dita como as configurações vão ser dispostas, por isso não se deve entender o flexbox com comandos de direção padrão como: cima, baixo, direita e esquerda.</p>
+        </section>
+    </main>
+</body>
+</html>
