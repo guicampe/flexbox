@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: rgb(220, 245, 198);
+}
+
+header {
+    background-color: rgb(116, 196, 130);
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+header > h1 {
+    text-align: center;
+    padding: 5px;
+    color: rgb(1, 43, 1);
+}
+
+header > p {
+    text-align: justify;
+    text-indent: 20px;
+    padding: 15px;
+    padding-top: 5px;
+    color: rgb(1, 43, 1);
+}
+
+header > p > a {
+    text-decoration: none;
+    color: black;
+}
+
+header > p > a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+    color: white;
+}
+
+section {
+    height: 100%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    background-color: rgb(226, 226, 226);
+    width: 85vw;
+}
+
+section > h2 {
+    text-indent: 40px;
+    padding: 5px;
+}
+
+section > p {
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 1.4em;
+    padding: 2px 40px;
+}
+
+pre {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #282a36;
+    display: block;
+    width: 300px;
+    margin: 10px auto;
+    border-radius: 25px;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
+}
+
+#textoEstilo {
+    color: #569cd6;
+}
+
+#seletorCSS {
+    color: #e5c07b;
+}
+
+#chavesCSS {
+    color: #d4d200
+}
+
+#textoElemento {
+    color: #9cdcfe;
+}
+
+#textoConfig {
+    color: #d16969;
+}
+
+#pontoVirgula {
+    color: #fff;
+}
+
+#imagem {
+    display: block;
+    width: 99%;
+    padding: 10px 40px;
+    margin: 0 auto;
+}
+
+#testeFlex {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.botao {
+    padding: 5px;
+    margin: 8px 2px;
+    border: none;
+    background-color: #e5c07b;
+    border-radius: 5px;
+}
+
+.botao:hover {
+    cursor: pointer;
+    background-color: #d4d200;
+    transition: background 0.4s ease-in-out;
+}
+
+.principal {
+    background-color: #fff;
+    padding: 15px;
+}
+
+.container1 {
+    background-color: #5271ff;
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.items {
+    background-color: #ff5757;
+    flex: 0 0 30px;
+    margin: 0px 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px;
+}
