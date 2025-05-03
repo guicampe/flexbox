@@ -123,8 +123,12 @@ pre {
 }
 
 .principal {
-    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #a7a7a7;
     padding: 15px;
+    box-shadow: 0px -2px 1px rgba(0, 0, 0, 0.096);
 }
 
 .container1 {

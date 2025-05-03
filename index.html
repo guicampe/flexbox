@@ -35,21 +35,22 @@
             <picture>
                 <img src="imagens/eixos-flexbox.jpg" alt="Eixos no flexbox" id="imagem">
             </picture>
-            <h2>Vejamos na prática como isso acontece</h2>
+            <h2>Teste na prática:</h2>
             <div id="testeFlex">
-                <input type="button" value="row" class="botao">
-                <input type="button" value="row-reverse" class="botao">
-                <input type="button" value="column" class="botao">
-                <input type="button" value="column-reverse" class="botao">
+                <input type="button" value="row" class="botao" onclick="flexRow()">
+                <input type="button" value="row-reverse" class="botao" onclick="flexRowreverse()">
+                <input type="button" value="column" class="botao" onclick="flexColumn()">
+                <input type="button" value="column-reverse" class="botao" onclick="flexColumnreverse()">
             </div>
             <div class="principal">
                 <div class="container1">
-                    <div class="items">1</div>
-                    <div class="items">2</div>
-                    <div class="items">3</div>
+                    <div class="items" id="cx1">1</div>
+                    <div class="items" id="cx2">2</div>
+                    <div class="items" id="cx3">3</div>
                 </div>
             </div>
         </section>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
