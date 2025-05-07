@@ -32,10 +32,22 @@
             <h2>Os eixos no flexbox</h2>
             <p>O flexbox possui dois eixos em que podemos configurar os elementos: eixo principal (main axis) e eixo transversal (cross axis).</p>
             <p>O main axis é quem dita como as configurações vão ser dispostas, por isso não se deve entender o flexbox com comandos de direção padrão como: cima, baixo, direita e esquerda.</p>
+            <p>Além dessas duas configurações, ainda temos que ter em mente que cada eixo possui um início e um fim. Definidos por <i>main-start</i> e <i>main-end</i>, ou então por <i>cross-start</i> e <i>cross-end</i>.</p>
             <picture>
                 <img src="imagens/eixos-flexbox.jpg" alt="Eixos no flexbox" id="imagem">
             </picture>
-            <h2>Teste na prática:</h2>
+            <h2>Empacotamento e fluxo no Flexbox</h2>
+            <p>São usadas duas definições para alterar o comportamento do pai. O <i>flex-wrap</i> e o <i>flex-direction</i>. O flex-wrap, como o próprio nome sugere <i>wrap</i> no inglês significa "embrulhar" e <i>direction</i> significa "direção".</p>
+            <p>No <i>Flexbox</i> o padrão de empacotamento é o <i>nowrap</i>. Isso significa que o conteúdo presente no contâiner pai não será deslocado, ou quebrado. Porém é possível alterar essa configuração para <i>wrap</i>, aonde o conteúdo será quebrado para o próximo espaço livre.</p>
+            <p>O comportamento de para onde este conteúdo será deslocado vai depender dos eixos. A W3C recomenda o uso de uma junção de <i>flex-wrap + flex-direction</i>: o <i>flex-flow</i>.</p>
+            <pre><code>
+                <span id="textoEstilo">&lt;style&gt;</span>
+                    <span id="seletorCSS">div#container</span> <span id="chavesCSS">{</span>
+                        <span id="textoElemento">flex-flow:</span> <span id="textoConfig">row nowrap</span><span id="pontoVirgula">;</span>
+                    <span id="chavesCSS">}</span>
+                <span id="textoEstilo">&lt;/style&gt;</span>
+                </code></pre>
+            <h2>Teste de eixos</h2>
             <div id="testeFlex">
                 <input type="button" value="row" class="botao" onclick="flexRow()">
                 <input type="button" value="row-reverse" class="botao" onclick="flexRowreverse()">
@@ -44,11 +56,45 @@
             </div>
             <div class="principal">
                 <div class="container1">
-                    <div class="items" id="cx1">1</div>
-                    <div class="items" id="cx2">2</div>
-                    <div class="items" id="cx3">3</div>
+                    <div class="items" id="cx11">1</div>
+                    <div class="items" id="cx12">2</div>
+                    <div class="items" id="cx13">3</div>
                 </div>
             </div>
+            <h2>Teste de empacotamento</h2>
+            <div id="testeFlex">
+                <input type="button" value="nowrap" class="botao" onclick="noWrap()">
+                <input type="button" value="wrap" class="botao" onclick="wrap()">
+                <input type="button" value="Reset" class="botao" onclick="resetar()">
+            </div>
+            <div class="principal">
+                <div class="container2">
+                    <div class="items" id="cx21">1</div>
+                    <div class="items" id="cx22">2</div>
+                    <div class="items" id="cx23">3</div>
+                </div>
+                <i>Considerando que o contâiner pai foi diminuido até o limite dos itens.</i>
+            </div>
+            <h2>Alinhando os itens dentro de Flexbox</h2>
+            <p>Os itens dentro de <i>flexbox</i> podem ser alinhados com base nos eixos vistos acima.</p>
+            <h3>justify-content</h3>
+            <p>Alinha em relação ao main axis</p>
+            <ul>
+                <li>flex-start:</li>
+                <li>flex-end:</li>
+                <li>center:</li>
+                <li>space-between:</li>
+                <li>space-evenly:</li>
+                <li>space-around:</li>
+            </ul>
+            <h3>align-items</h3>
+            <p>Alinha em relação ao cross axis</p>
+            <ul>
+                <li>stretch:</li>
+                <li>flex-start:</li>
+                <li>flex-end:</li>
+                <li>center:</li>
+            </ul>
         </section>
     </main>
     <script src="script.js"></script>
